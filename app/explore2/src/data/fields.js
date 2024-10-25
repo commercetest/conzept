@@ -8436,6 +8436,7 @@ if ( valid( item.found_in_taxon ) ){
 },
 */
 
+/*
 'ms_academic' : {
   title: 'Microsoft Academic topic',
   render_condition: false,
@@ -8448,6 +8449,7 @@ if ( valid( item.found_in_taxon ) ){
   section: 'science-search-tools',
   rank: 41,
 },
+*/
 
 'jstor' : {
   title: 'JSTOR',
@@ -17869,7 +17871,7 @@ if ( valid( item.found_in_taxon ) ){
   create_condition: true,
   title: 'Journal of the American Medical Association',
   prop: '',
-  type: 'link',
+  type: 'url',
   mv: false,
   url: 'https://jamanetwork.com/searchresults?q=${title_quoted}&allSites=1',
   icon: 'fa-solid fa-laptop-medical',
@@ -19990,13 +19992,13 @@ if ( valid( item.found_in_taxon ) ){
   create_condition: true,
   title: 'Academic Torrents',
   prop: '',
-  type: 'link',
+  type: 'url',
   mv: false,
   url: 'https://academictorrents.com/browse.php?search=${title_quoted}',
   icon: 'fa-regular fa-newspaper',
   text: 'Academic Torrents',
   section: ['media-datasets-topical','science-search-tools'],
-  rank: [22,167],
+  rank: [22,190],
 },
 
 'hubmap' : {
@@ -20873,6 +20875,7 @@ if ( valid( item.found_in_taxon ) ){
   rank: 29,
 },
 
+/*
 'archive_scholar' : {
   value: 'archive-scholar:${item.title}:true',
   title: 'Archive Scholar',
@@ -20885,7 +20888,9 @@ if ( valid( item.found_in_taxon ) ){
   section: 'science-search-tools',
   rank: 21,
 },
+*/
 
+/*
 'unpaywall_inline' : {
   value: 'unpaywall:${item.title}:true',
   title: 'Unpaywall science',
@@ -20898,7 +20903,9 @@ if ( valid( item.found_in_taxon ) ){
   section: 'science-search-tools',
   rank: 50,
 },
+*/
 
+/*
 'ms_academic_inline' : {
   value: 'ms-academic:${item.title}:true',
   title: 'Microsoft Academic search',
@@ -20911,7 +20918,7 @@ if ( valid( item.found_in_taxon ) ){
   section: 'science-search-tools',
   rank: 40,
 },
-
+*/
 
 'rijksmuseum_inline' : {
   value: 'rijksmuseum:${item.title}:true',
