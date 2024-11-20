@@ -40,6 +40,10 @@ services:
       - 80:80
       - 443:443
     restart: on-failure
+    command: >
+      /bin/bash -c "
+      cd /var/www/html/app/explore2 && npm i && sh build.sh &&
+      cd /var/www/html/app/explore2/libs/lc && sh build.sh"
 
 volumes:
   sslvolume:
