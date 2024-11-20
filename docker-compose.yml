@@ -31,10 +31,11 @@ services:
       - sslvolume:/etc/ssl
       - ./data/certbot/conf:/etc/letsencrypt/
       - ./data/certbot/www:/var/www/certbot
-      # only use these mappings during local development (never commit!):
-      # FIXME: not yet producing a working build.
-      #- app:/var/www/html/app
-      #- /var/www/html/app/explore2/node_modules
+      # Only use the following  mappings during local development (never commit to main!):
+      # Mount the application source for hot-reloading
+      - ./app:/var/www/html/app
+      # Optionally mount the node_modules directory if needed
+      - ./app/explore2/node_modules:/var/www/html/app/explore2/node_modules
     ports:
       - 80:80
       - 443:443

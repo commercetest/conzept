@@ -37,6 +37,7 @@ RUN apk add --no-cache --update \
     php7-zlib \
     vim \
     sudo \
+    inotify-tools \
     wget git curl bash grep make build-base jq\
     supervisor nodejs-current npm
 
