@@ -43,7 +43,10 @@ services:
     command: >
       /bin/bash -c "
       cd /var/www/html/app/explore2 && npm i && sh build.sh &&
-      cd /var/www/html/app/explore2/libs/lc && sh build.sh"
+      cd /var/www/html/app/explore2/libs/lc && sh build.sh &&
+      mkdir -p /var/www/html/app/explore2/assets/json/covers/ &&
+      cd /var/www/html/app/explore2/tools && sh ./get_previous_month_covers.sh &&
+      exec /bin/bash -c 'source /var/www/html/settings.conf && /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf'"
 
 volumes:
   sslvolume:
